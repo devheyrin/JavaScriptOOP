@@ -17,3 +17,9 @@ function avg(prefix1, prefix2) {
 }
 
 console.log(avg.call(obj2, "hi", "hello"));
+
+let obj2Sum = sum.bind(obj2);
+console.log(obj2Sum())
+
+let obj2Avg = avg.bind(obj2);
+console.log(obj2Avg('a', 'b'))
