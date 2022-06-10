@@ -16,8 +16,10 @@ function avg(prefix1, prefix2) {
     return prefix1 + prefix2 + (this.first + this.second) / 2;
 }
 
+// avg 함수가 객체를 위해 일하는 용병이 된다. 
 console.log(avg.call(obj2, "hi", "hello"));
 
+// 새 함수를 만드는 분신술! 
 let obj2Sum = sum.bind(obj2);
 console.log(obj2Sum())
 
